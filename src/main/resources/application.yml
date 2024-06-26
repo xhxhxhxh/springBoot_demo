@@ -1,0 +1,46 @@
+spring:
+  profiles:
+    active: test
+
+---
+
+server:
+  port: 8081
+
+name: xh
+
+enterprise:
+  name: aa
+  age: 20
+spring:
+  config:
+    activate:
+      on-profile: dev
+
+---
+
+name: xh
+enterprise:
+  name: aa
+  age: 20
+spring:
+  config:
+    activate:
+      on-profile: pro
+server:
+  port: 8082
+
+---
+
+name: xh
+enterprise:
+  name: aa
+  age: 20
+spring:
+  config:
+    activate:
+      on-profile: test
+server:
+  port: 8083
+
+---
